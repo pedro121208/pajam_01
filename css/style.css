@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Aladin&family=Bahiana&family=Nosifer&display=swap');
+
+
+* 
+
+/* tela inteira como um todo/caixa */
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+/*  PADRÕES  */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+/* TOP BAR */
+.top-bar {
+    background: #e5e5e5;
+    padding: 6px 30px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.flags img {
+    width: 22px;
+    margin-left: 8px;
+}
+
+/* HEADER  */
+.main-header {
+    background: #790c19;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img {
+    width: 120px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-family: 'Afacad' sans-serif;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.icons img {
+    width: 32px;
+    margin-left: 15px;
+}
+
+.icons2 img {
+    width: 38px;
+    margin-left: 22px;
+}
+
+
+/* divisão entre seções p ficar + bonitinho */
+.linha-separadora2 {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+/*  fundo */
+.fundo {
+    background: url("../imagens/fundo.webp") center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* CENTRALIZA HORIZONTAL */
+    color: #ffffff;
+    position: relative;
+    text-align: center;
+}
+
+
+.fundo-text {
+    text-align: center;
+}
+
+
+.fundo h1 {
+    text-align: center;
+    font-size: 96px;
+    font-family: 'IM Fell DW Pica', sans-serif;
+}
+
+.atracoes-principais {
+    background-color: #53115c;
+    width: 100%;
+    padding: 90px 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.conteudo-atracoes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.texto-atracoes h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Nosifer', sans-serif;
+    color: #ffffff;
+}
+
+.texto-atracoes p {
+    font-size: 22px;
+    line-height: 1.6;
+    font-family: 'Afacad', sans-serif;
+    color: #f4f0f9;
+}
+
+.imagem-topo img,
+.imagem-baixo img {
+    width: 90%;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.imagem-topo img,
+.imagem-baixo img {
+    width: 90%;
+    border-radius: 16px;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* efeito de relevo */
+.imagem-topo img:hover,
+.imagem-baixo img:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.texto-baixo h3 {
+    font-size: 64px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-family: 'Nosifer', sans-serif;
+}
+
+.texto-baixo p {
+    font-size: 24px;
+    line-height: 1.6;
+    color: #f4f0f9;
+    font-family: 'Afacad', sans-serif;
+}
+
+/* divisão entre seções p ficar + bonitinho */
+.linha-separadora {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+
+
+/*  INGRESSOS  */
+.ingressos-terror {
+    background: url("../imagens/fundo2.png") center/cover no-repeat;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.titulo-ingressos {
+    font-size: 100px;
+    letter-spacing: 3px;
+    margin-bottom: 60px;
+    font-family: 'Bahiana', sans-serif;
+}
+
+/* CARDS */
+.cards-ingressos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    font-family: 'Bahiana', sans-serif;
+}
+
+.card-ingresso {
+    width: 320px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-ingresso img {
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+
+/* plaquinha branca */
+.label {
+    background: #eee;
+    padding: 12px 0;
+    font-size: 18px;
+}
+
+/* efeito relevo */
+.card-ingresso:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+}
+
+.btn-imagem {
+    display: inline-block;
+    margin-top: 40px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.btn-imagem img {
+    width: 460px; /* ajuste conforme a imagem */
+    max-width: 90%;
+}
+
+.btn-imagem:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));
+}
+
+/*  FOOTER  */
+.linha-footer {
+    width: 80%;
+    height: 2px;
+    margin: 40px auto 0;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #fff,
+        transparent
+    );
+}
+
+/* footer */
+.footer {
+    background: #e5e5e5;
+    padding: 40px 20px;
+    font-size: 15px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* colunas de texto */
+.footer-col p {
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.footer-col p:hover {
+    text-decoration: underline;
+}
+
+/* redes sociais */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    font-family: 'Afacad' sans-serif;
+}
+
+.footer-social img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.footer-social2 img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.15);
+}
+
+/* RESPONSIVIDADE */
+
+/* MOBILE (até 768px) */
+@media (max-width: 768px) {
+
+    /* CONTAINER PADRÃO */
+    .container {
+        width: 95%;
+    }
+
+    /* TOP BAR */
+    .top-bar {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    /* HEADER */
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    /* FUNDO / HERO */
+    .fundo {
+        height: auto;
+        padding: 60px 20px;
+    }
+
+    .fundo h1 {
+        font-size: 36px;
+    }
+
+    /* ATRAÇÕES */
+    .conteudo-atracoes {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .texto-atracoes h2 {
+        font-size: 32px;
+    }
+
+    .texto-atracoes p {
+        font-size: 18px;
+    }
+
+    .texto-baixo h3 {
+        font-size: 36px;
+    }
+
+    .texto-baixo p {
+        font-size: 18px;
+    }
+
+    /* IMAGENS */
+    .imagem-topo img,
+    .imagem-baixo img {
+        width: 100%;
+    }
+
+    /* INGRESSOS */
+    .ingressos-terror {
+        padding: 60px 15px;
+    }
+
+    .titulo-ingressos {
+        font-size: 34px;
+    }
+
+    .cards-ingressos {
+        gap: 25px;
+    }
+
+    .card-ingresso {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    /* BOTÃO IMAGEM */
+    .btn-imagem img {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}
+
+/* TABLET (769px até 1024px) */
+
+@media (max-width: 1024px) {
+
+    /* HEADER */
+    .menu {
+        gap: 25px;
+    }
+
+    /* FUNDO */
+    .fundo h1 {
+        font-size: 46px;
+    }
+
+    /* ATRAÇÕES */
+    .conteudo-atracoes {
+        gap: 40px;
+        padding: 0 40px;
+    }
+
+    .texto-atracoes h2 {
+        font-size: 42px;
+    }
+
+    .texto-baixo h3 {
+        font-size: 48px;
+    }
+
+    /* INGRESSOS */
+    .titulo-ingressos {
+        font-size: 42px;
+    }
+
+    .card-ingresso {
+        width: 280px;
+    }
+}
